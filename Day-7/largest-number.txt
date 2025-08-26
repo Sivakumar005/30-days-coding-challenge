@@ -18,7 +18,10 @@ Output: "9534330"
 
 
 Solution:
-vector<string> arr;
+class Solution {
+public:
+    string largestNumber(vector<int>& nums) {
+        vector<string> arr;
         for (int num : nums) {
             arr.push_back(to_string(num));
         }
@@ -36,3 +39,5 @@ vector<string> arr;
             result += s;
         }
         return result;
+    }
+};
